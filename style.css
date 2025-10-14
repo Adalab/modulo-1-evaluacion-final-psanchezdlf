@@ -126,6 +126,7 @@ padding-bottom: 57px;
   padding-bottom: 42px;
 }
 
+/* botón de comprar */
 .features-button {
   text-decoration: none;
   color:#6c933e;
@@ -136,6 +137,10 @@ padding-bottom: 57px;
   border: 3px solid #6c933e;             
   color: #6c933e;
   border-radius: 99px;               
+}
+
+.features-button:hover {
+  transform: scale(1.03);
 }
 
 /* PRODUCTS */
@@ -194,7 +199,7 @@ padding-bottom: 57px;
   text-transform: none;
 }
 
-/* botón de comprar */
+/* botón de empezar ahora */
 
 .products-button {
   text-decoration: none;
@@ -206,6 +211,10 @@ padding-bottom: 57px;
   padding: 12px 20px;
   border: 2px solid #6c933e;             
   border-radius: 99px;      
+}
+
+.products-button:hover {
+  transform: scale(1.03);
 }
 
 /* FOOTER */
@@ -240,7 +249,6 @@ padding-bottom: 57px;
   display: block;
 }
 
-
 .footer-content {
   display:grid;
   grid-template-columns: 1fr;
@@ -264,6 +272,10 @@ padding-bottom: 57px;
     color:#fff !important; 
     text-decoration:none !important; 
   }
+
+.footer a:hover {
+  color:#6c933e !important;
+}
 
 .footer li {
 margin-bottom: 10px;  /* separación entre elementos lista */
