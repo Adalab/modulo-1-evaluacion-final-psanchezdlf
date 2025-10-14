@@ -109,7 +109,7 @@ padding-bottom: 57px;
 .products {
   background-color: #d9e4cc;
   padding-top: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .products-text {
@@ -172,16 +172,35 @@ padding-bottom: 57px;
 
 /* FOOTER */
 
-.up-arrow{
-  position: relative;
-  margin-top: 20px;
-}
-
 .footer {
+  position:relative; /* El footer será el contenedor de referencia para la flecha */
   background-color: #4a4a4a;
   color:white;
   text-align: center;
+  padding-top: 48px; /* deja hueco para la flecha */
 }
+
+.up-arrow{
+  position: absolute;
+  left: 50%;
+  top: 0;                             /* límite superior del footer */
+  transform: translate(-50%, -50%);   /* sube media altura */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;                        /* tamaño del botón */
+  height: 48px;
+  border-radius: 50%;
+  background:white;
+}
+
+/* Tamaño del icono */
+.up-arrow img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
 
 .footer-content {
   display:grid;
@@ -189,7 +208,6 @@ padding-bottom: 57px;
   gap:20px;
   justify-items: center;
   align-items: center;
-  padding-top: 30px;
   padding-bottom: 30px;
 }
 
