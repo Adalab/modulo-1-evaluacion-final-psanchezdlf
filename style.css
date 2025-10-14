@@ -270,7 +270,6 @@ margin-bottom: 10px;  /* separación entre elementos lista */
 }
 
 
-
 /* BREAKPOINTS */
 
 /* Tablet */
@@ -287,3 +286,7 @@ margin-bottom: 10px;  /* separación entre elementos lista */
 }
 
 /* Escritorio */
+
+@media (min-width: 1024px ) {
+
+}
