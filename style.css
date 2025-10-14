@@ -145,12 +145,17 @@ padding-bottom: 57px;
 
 /* PRODUCTS */
 
+/* Contenedor principal: todo centrado horizontalmente */
 .products {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #d9e4cc;
   padding-top: 18px;
   padding-bottom: 40px;
 }
 
+/* sección hija de texto */
 .products-text {
   text-align: center;
 }
@@ -164,6 +169,8 @@ padding-bottom: 57px;
     color: #666;
     font-weight: bold;
 }
+
+/* sección hija de lista de productos */
 
 .product-list {
   display: grid;
@@ -183,8 +190,8 @@ padding-bottom: 57px;
 
 /* caja redonda para las imágenes */
 .product-img {
-  width: 120px;                 /* todas igual */
-  height: 120px;                /* cuadrado → círculo */
+  width: 120px;                 
+  height: 120px;                
   border-radius: 50%;
   box-shadow: 0 8px 20px rgba(0,0,0,.12);
   object-fit: contain;          /* encaja sin deformar */
@@ -202,6 +209,7 @@ padding-bottom: 57px;
 /* botón de empezar ahora */
 
 .products-button {
+  align-self: center;
   text-decoration: none;
   background-color:#6c933e;
   color:white;
@@ -210,7 +218,8 @@ padding-bottom: 57px;
   display: inline-block;                 
   padding: 12px 20px;
   border: 2px solid #6c933e;             
-  border-radius: 99px;      
+  border-radius: 99px;
+  margin-top: 16px;       
 }
 
 .products-button:hover {
@@ -291,14 +300,18 @@ margin-bottom: 10px;  /* separación entre elementos lista */
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .hero h1 { 
+    font-size: 75px;
+  }
+
   .footer-content {
     grid-template-columns: 1fr 1fr 1fr;
-
   }
 }
 
 /* Escritorio */
 
 @media (min-width: 1024px ) {
+
 
 }
