@@ -9,22 +9,30 @@
   <body>
     <!--HEADER-->
     <header class="header">
-      <img
-        src="./images/ico-menu.svg"
-        alt="menu movil hamburguesa"
-        class="hamburguer-menu"
-      />
+      <a href="#" class="hamburguer-menu">
+        <img
+          class="hamburguer-menu-icon"
+          src="./images/ico-menu.svg"
+          alt="menu movil hamburguesa"
+        />
+      </a>
     </header>
 
     <!--Contenido principal-->
     <main>
       <!--HERO-->
-      <hero class="hero">
-        <h1>Comienzos compartidos</h1>
-        <p>Todo lo que necesitan para volver al cole con ilusión.</p>
+      <section id="hero-section" class="hero">
+        <div class="hero-text">
+          <h1>Comienzos compartidos</h1>
+          <p>Todo lo que necesitan para volver al cole con ilusión.</p>
+        </div>
         <!--flecha de navegación-->
-        <div class="down-arrow"><img src="./images/ico-scroll-down.svg" /></div>
-      </hero>
+        <div class="hero-button">
+          <a href="#products-section" class="down-arrow">
+            <img src="./images/ico-scroll-down.svg" />
+          </a>
+        </div>
+      </section>
 
       <!--FEATURES-->
       <section class="features">
@@ -35,56 +43,69 @@
           deportiva para hombre y mujer te ofrece las últimas tecnologías, a la
           altura de tu rendimiento, para que superes tu mejor marca personal.
         </p>
-        <a href="#">Comprar</a>
+        <a href="#products-section" class="features-button">Comprar</a>
       </section>
 
       <!--PRODUCTS-->
-      <section class="products">
+      <section id="products-section" class="products">
+        <!-- texto-->
         <div class="products-text">
           <span>¡Prepáralos con tus marcas favoritas!</span>
           <h2>VUELTA AL COLE</h2>
         </div>
 
-        <!-- tipos de productos-->
-        <article class="product">
-          <img src="./images/lpbts-mod05-img01-desk.png" />
-          <p>Mochilas escolares</p>
-        </article>
-        <article class="product">
-          <img src="./images/lpbts-mod05-img04-mob.png" />
-          <p>Estuches</p>
-        </article>
-        <article class="product">
-          <img src="./images/lpbts-mod05-img03-mob.png" />
-          <p>Bolsas de deporte</p>
-        </article>
-        <a href="#"> Empezar ahora </a>
+        <!-- lista de tipos de productos-->
+        <div class="product-list">
+          <article class="product">
+            <img
+              class="product-img"
+              src="./images/lpbts-mod05-img01-desk.png"
+            />
+            <p>Mochilas escolares</p>
+          </article>
+          <article class="product">
+            <img class="product-img" src="./images/lpbts-mod05-img04-mob.png" />
+            <p>Estuches</p>
+          </article>
+          <article class="product">
+            <img class="product-img" src="./images/lpbts-mod05-img03-mob.png" />
+            <p>Bolsas de deporte</p>
+          </article>
+          <a href="#" class="products-button"> Empezar ahora </a>
+        </div>
       </section>
     </main>
 
     <!--FOOTER-->
     <footer class="footer">
       <!--flecha de navegación-->
-      <div class="up-arrow"><img src="./images/ico-arrow.svg" /></div>
+      <a href="#hero-section" class="up-arrow">
+        <img src="./images/ico-arrow.svg" />
+      </a>
 
-      <!--menú principal en footer-->
-      <ul class="footer-menu">
-        <li><a href="https://adalab.es/" target="_blank"> Zapatillas</a></li>
-        <li><a href="https://adalab.es/" target="_blank"> Ropa</a></li>
-        <li><a href="https://adalab.es/" target="_blank"> Niño/a</a></li>
-        <li><a href="https://adalab.es/" target="_blank"> Destacados</a></li>
-        <li><a href="https://adalab.es/" target="_blank"> Tips </a></li>
-      </ul>
+      <div class="footer-content">
+        <!--menú principal en footer-->
+        <ul class="footer-menu">
+          <li><a href="https://adalab.es/" target="_blank"> Zapatillas</a></li>
+          <li><a href="https://adalab.es/" target="_blank"> Ropa</a></li>
+          <li><a href="https://adalab.es/" target="_blank"> Niño/a</a></li>
+          <li><a href="https://adalab.es/" target="_blank"> Destacados</a></li>
+          <li><a href="https://adalab.es/" target="_blank"> Tips </a></li>
+        </ul>
 
-      <!--enlaces a redes sociales-->
-      <ul class="social-media">
-        <li><a href="https://adalab.es/" target="_blank">Twitter</a></li>
-        <li><a href="https://adalab.es/" target="_blank">Instagram </a></li>
-        <li><a href="https://adalab.es/" target="_blank">Youtube </a></li>
-      </ul>
+        <!--enlaces a redes sociales-->
+        <ul class="social-media">
+          <li><a href="https://adalab.es/" target="_blank">Twitter</a></li>
+          <li><a href="https://adalab.es/" target="_blank">Instagram </a></li>
+          <li><a href="https://adalab.es/" target="_blank">Youtube </a></li>
+        </ul>
 
-      <!--copyright-->
-      <span class="copyright"> ©2025 We ❤ run</span>
+        <!--copyright-->
+        <ul class="copyright">
+          <li>©2025</li>
+          <li>We ❤ run</li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

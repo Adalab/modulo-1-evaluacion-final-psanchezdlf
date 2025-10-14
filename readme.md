@@ -2,13 +2,12 @@
 
 ## ✅ Descripción del ejercicio
 
-Este proyecto consiste en **maquetar una página web responsive** a partir de un diseño proporcionado. El objetivo principal es reproducir la composición y el estilo indicados, poniendo en práctica Sass, Flexbox, CSS Grid y media queries.
+Este proyecto consiste en **maquetar una página web responsive** a partir de un diseño proporcionado. El objetivo principal es reproducir la composición y el estilo indicados, poniendo en práctica Flexbox, CSS Grid y media queries.
 Además, se recomienda implementar pequeñas interacciones como transiciones y animaciones.
 
 ## 🚀 Tecnologías y lenguajes utilizados
 
 - **HTML5**: estructura de la página y accesibilidad básica.
-- **Sass** (SCSS): variables, mixins y parciales para organizar estilos.
 
 * **CSS3**:
   - Flexbox.

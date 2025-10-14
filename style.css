@@ -1,0 +1,230 @@
+/* RESET GENERAL */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+/* cajita flotante */
+.header{
+  background-color: #6c933e;
+  position: fixed; /* se posiciona y fija respecto al body */
+  width: 36px;
+  height:36px;
+  display:flex;
+  align-items: center; /* centrado del menú */
+  justify-content: center;
+}
+
+/* enlace */
+.hamburguer-menu {
+ width: 100%; /* el enlace ocupa toda la cajita, mejora el click */
+ height: 100%;
+ display:flex;
+ justify-content: center; /* centrado del icono */
+ align-items: center;
+}
+
+/* icono hamburguesa */
+.hamburguer-menu-icon {
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+ 
+
+/* HERO */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 552px;
+  width: 100%;
+  background:url(./images/cover.jpeg) right / cover no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.hero-text {
+  padding-top: 297px;
+}
+
+/* Enlace con aspecto de botón circular y flecha */
+
+.hero-button {
+padding-top: 10px;
+padding-bottom: 57px;
+}
+
+.down-arrow {
+  background-color: white;
+  border-radius: 50%;
+  padding: 12px 12px;
+}
+
+
+/* FEATURES */
+
+.features {
+  padding: 34px 17px 30px 13px;
+  display:flex;
+  justify-items: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.features span {
+  color: #6c933e;
+}
+
+.features h2 {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.features p {
+  font-size: 20px;
+  color: #666;
+  margin: 0;  /* quita márgenes por defecto */
+  padding-bottom: 42px;
+}
+
+.features-button {
+  text-decoration: none;
+  color:#6c933e;
+  display: inline-block;                 
+  padding: 12px 40px;
+  border: 3px solid #6c933e;             
+  color: #6c933e;
+  border-radius: 99px;               
+}
+
+/* PRODUCTS */
+
+.products {
+  background-color: #d9e4cc;
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+
+.products-text {
+  text-align: center;
+}
+
+.products h2 {
+  margin:0;
+  padding-bottom: 15px;
+}
+
+.products span{
+    color: #666;
+    font-weight: bold;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr; /* una sola columna (se apilan en movil) */
+  gap:10px;
+  justify-items: center;
+}
+
+/* card de cada producto */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+/* caja redonda para las imágenes */
+.product-img {
+  width: 120px;                 /* todas igual */
+  height: 120px;                /* cuadrado → círculo */
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  object-fit: contain;          /* encaja sin deformar */
+  display: block;
+}
+
+/* nombre del producto */
+.product p { 
+  margin: 10px;
+  text-align: center; 
+  font-weight: 600; }
+
+/* botón de comprar */
+
+.products-button {
+  text-decoration: none;
+  background-color:#6c933e;
+  color:white;
+  display: inline-block;                 
+  padding: 12px 20px;
+  border: 2px solid #6c933e;             
+  border-radius: 99px;      
+}
+
+/* FOOTER */
+
+.up-arrow{
+  position: relative;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #4a4a4a;
+  color:white;
+  text-align: center;
+}
+
+.footer-content {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:20px;
+  justify-items: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-menu, .social-media, .copyright {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+.footer-menu, .social-media {
+  text-transform: uppercase;
+}
+
+.footer a { 
+    color:#fff !important; 
+    text-decoration:none !important; 
+  }
+
+
+
+
+
+/* BREAKPOINTS */
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+
+}
+/* Escritorio */
