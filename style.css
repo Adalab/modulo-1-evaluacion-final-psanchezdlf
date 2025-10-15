@@ -313,7 +313,7 @@ margin-bottom: 10px;  /* separación entre elementos lista */
    .hero p {
     font-size:24px; /* fuente de p más grande a partir de tablet */
     margin: 0; /* texto más pegado */
-    padding: 0px 200px 0px 200px;   /* amplia aire a los lados y baja linea*/
+    padding: 0px 200px 0px 200px;   /* amplia aire a los lados*/
   }
 
   /* FEATURES */
@@ -359,8 +359,9 @@ margin-bottom: 10px;  /* separación entre elementos lista */
   /* HERO */
 
   .hero h1 { 
-    
-    margin: 0;
+    max-width: 15ch;      /* ~15 caracteres por línea ≈ 2 líneas */
+    text-align: center;
+    margin: 0 auto;
   }
 
   .hero p {
