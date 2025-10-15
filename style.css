@@ -330,7 +330,9 @@ margin-bottom: 10px;  /* separación entre elementos lista */
   /* FOOTER */
   
   .footer-content {
-    grid-template-columns: 1fr 1fr 1fr; /* 3 colunmnas a partir de tablet */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnnas a partir de tablet */
+    text-align: left;
+    align-items: stretch; /* para que estén a la misma altura */  
   }
 
   /* Orden de columnas cambia a partir de tablet */
