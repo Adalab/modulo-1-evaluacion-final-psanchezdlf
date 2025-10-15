@@ -291,6 +291,11 @@ padding-bottom: 57px;
 margin-bottom: 10px;  /* separación entre elementos lista */
 }
 
+/* mini iconito del copyright */
+.heart-icon {
+  color:#6c933e; 
+}
+
 
 /*  ---------- BREAKPOINTS ----------- */
 
