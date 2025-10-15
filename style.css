@@ -97,7 +97,6 @@ padding-bottom: 57px;
   padding: 10px 10px;
 }
 
-
 /* ------------ FEATURES ---------------- */
 
 .features {
@@ -245,7 +244,13 @@ padding-bottom: 57px;
   height: 45px;
   border-radius: 50%;
   background:white;
+  transition: transform .15s ease, box-shadow .15s ease; /* pequeño efecto de transición */
 }
+
+.up-arrow:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
 
 /* Tamaño del icono */
 .up-arrow img {
@@ -274,12 +279,12 @@ padding-bottom: 57px;
 }
 
 .footer a { 
-    color:#fff !important; 
-    text-decoration:none !important; 
+    color:#fff ; 
+    text-decoration:none ; 
   }
 
 .footer a:hover {
-  color:#6c933e !important;
+  color:#6c933e; /* resaltado de enlaces */
 }
 
 .footer li {
