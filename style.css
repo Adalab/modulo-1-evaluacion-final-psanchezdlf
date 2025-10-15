@@ -359,7 +359,7 @@ margin-bottom: 10px;  /* separación entre elementos lista */
   /* HERO */
 
   .hero h1 { 
-    max-width: 15ch;      /* ~15 caracteres por línea ≈ 2 líneas */
+    max-width: 15ch;      /* 15 caracteres por línea ≈ 2 líneas */
     text-align: center;
     margin: 0 auto;
   }
@@ -382,3 +382,5 @@ margin-bottom: 10px;  /* separación entre elementos lista */
     column-gap: 200px;   /* separa aún más las cards en escritorio */
   }
 }
+
+/* holis Ivan, he revisado todo y mejoraría cosas pero llevo dos días soñando con código y grids, help! */
