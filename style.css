@@ -24,7 +24,7 @@ p, span, li, a {
   font-family: "Roboto";
 }
 
-/* HEADER */
+/* --------- HEADER ------------- */
 
 /* cajita flotante */
 .header{
@@ -54,7 +54,7 @@ p, span, li, a {
 }
  
 
-/* HERO */
+/* ---------- HERO --------------- */
 
 .hero {
   display: flex;
@@ -82,7 +82,6 @@ p, span, li, a {
 }
 
 /* Enlace con aspecto de botón circular y flecha */
-
 .hero-button {
 padding-top: 10px;
 padding-bottom: 57px;
@@ -98,7 +97,7 @@ padding-bottom: 57px;
 }
 
 
-/* FEATURES */
+/* ------------ FEATURES ---------------- */
 
 .features {
   padding: 34px 17px 30px 13px;
@@ -142,7 +141,7 @@ padding-bottom: 57px;
   transform: scale(1.03);
 }
 
-/* PRODUCTS */
+/* ------------ PRODUCTS ------------ */
 
 /* Contenedor principal: todo centrado horizontalmente */
 .products {
@@ -170,7 +169,6 @@ padding-bottom: 57px;
 }
 
 /* sección hija de lista de productos */
-
 .product-list {
   display: grid;
   grid-template-columns: 1fr; /* una sola columna (se apilan en movil) */
@@ -205,7 +203,6 @@ padding-bottom: 57px;
 }
 
 /* botón de empezar ahora */
-
 .products-button {
   align-self: center;
   text-decoration: none;
@@ -224,7 +221,7 @@ padding-bottom: 57px;
   transform: scale(1.03);
 }
 
-/* FOOTER */
+/* ---------- FOOTER ------------- */
 
 .footer {
   position:relative; /* El footer será el contenedor de referencia para la flecha */
@@ -294,14 +291,34 @@ margin-bottom: 10px;  /* separación entre elementos lista */
 /* Tablet */
 @media (min-width: 768px) {
 
+  /* HERO */
+
   .hero h1 { 
     font-size: 75px;   /* fuente de h1 más grande a partir de tablet */
+    margin: 0; /* texto más pegado a partir de tablet*/
+  }
+  
+   .hero p {
+    font-size:24px; /* fuente de p más grande a partir de tablet */
     margin: 0; /* texto más pegado */
+    padding: 0px 200px 0px 200px;   /* amplia aire a los lados y baja linea*/
   }
 
+  /* FEATURES */
+  
   /* más aire a los lados y por debajo en features tablet */
   .features {
   padding: 34px 38px 50px 38px;
+  }
+
+  .features h2 {
+    font-size: 32px; /* fuente más grande a partir de tablet */
+  } 
+
+  /* PRODUCTS */
+
+  .products h3 {
+    font-size: 28px; /* fuente más grande a partir de tablet */
   }
 
   /* card de cada producto */
@@ -310,13 +327,22 @@ margin-bottom: 10px;  /* separación entre elementos lista */
     column-gap: 32px;   /* separa horizontalmente las cards */
   }
 
+  /* FOOTER */
+  
   .footer-content {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 colunmnas a partir de tablet */
   }
+
+  /* Orden de columnas cambia a partir de tablet */
+  .copyright    { order: 1; }
+  .footer-menu  { order: 2; }
+  .social-media { order: 3; }
 }
 
 /* Escritorio */
 @media (min-width: 1024px ) {
+
+  /* HERO */
 
   .hero h1 { 
     padding: 0px 500px 0px 500px;   /* amplia aire a los lados */
@@ -324,13 +350,17 @@ margin-bottom: 10px;  /* separación entre elementos lista */
   }
 
   .hero p {
-    font-size:28px;
+    font-size:28px; 
   }
+
+  /* FEATURES */
 
   /* aún más aire a los lados en features desktop para equilibrar */
   .features {
   padding: 34px 170px 50px 170px;
   }
+
+  /* PRODUCTS */
 
   /* card de cada producto */
   .product-list {
