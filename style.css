@@ -71,6 +71,7 @@ p, span, li, a {
 .hero-text {
   padding: 297px 40px 40px; 
   text-align: center;
+  margin: 0 auto;
 }
 
 .hero h1 {
@@ -303,7 +304,7 @@ margin-bottom: 10px;  /* separación entre elementos lista */
 @media (min-width: 768px) {
 
   /* HERO */
-
+  
   .hero h1 { 
     font-size: 75px;   /* fuente de h1 más grande a partir de tablet */
     margin: 0; /* texto más pegado a partir de tablet*/
@@ -358,7 +359,7 @@ margin-bottom: 10px;  /* separación entre elementos lista */
   /* HERO */
 
   .hero h1 { 
-    padding: 0px 500px 0px 500px;   /* amplia aire a los lados */
+    
     margin: 0;
   }
 
